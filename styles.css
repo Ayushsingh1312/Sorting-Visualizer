@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #2b5876, #4e4376);
+    color: #fff;
+    text-align: center;
+  }
+  
+  header {
+    padding: 20px;
+    background: #1a1a2e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .controls {
+    margin: 20px 0;
+  }
+  
+  label {
+    font-size: 1.2em;
+    margin-right: 10px;
+  }
+  
+  select, button {
+    padding: 12px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  button {
+    background: #6a0572;
+    color: #fff;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #9c27b0;
+  }
+  
+  /* Visualizer Container */
+  .visualizer {
+    display: flex;
+    justify-content: flex-start; /* Adjust bars position */
+    align-items: flex-end;
+    height: 40vh; /* Flexible height based on viewport */
+    background: #212121;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .bar {
+    margin: 0 2px;
+    background: #4caf50;
+    transition: height 0.3s, background 0.3s;
+    width: 100%; /* To make bars flexible */
+  }
+  
+  /* Hover effect on bars */
+  .bar:hover {
+    background: #81c784;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .controls {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    select, button {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .visualizer {
+      height: 50vh;
+    }
+  }
+  
